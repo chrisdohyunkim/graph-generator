@@ -26,7 +26,6 @@ def index():
                 plt.xlabel(df.columns[0])
                 plt.ylabel(df.columns[1])
 
-                # Save to BytesIO
                 img = io.BytesIO()
                 plt.savefig(img, format='png')
                 img.seek(0)
